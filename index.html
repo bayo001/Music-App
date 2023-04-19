@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7d4d510c9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+           <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+             </div>
+             <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+             </div>
+           </nav>
+           <img src="./Image/ddf.jpg" class="davido-img uu">
+           <h1>Davido</h1>
+           <p>fearles no competition ft Asake</p>
+
+           <audio  id="song">
+             <source src="./Music/Zinoleesky-Gone-Far.mp3" type="audio/mpeg">
+           </audio>
+            <input type="range" value="0" id="progress">
+           <!-- volume -->
+                 
+           
+               <div id="player">
+                 <audio src=""></audio>
+               </div>
+               <div id="volume">
+                 <label for="volume-control">Volume:</label>
+                 <input id="volume-control" type="range" min="0" max="100" value="50">
+               </div>
+              
+              
+            
+            <div class="control">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+         </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
